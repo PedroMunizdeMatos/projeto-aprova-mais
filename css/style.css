@@ -49,36 +49,26 @@ header{
   font-size: 1.5rem
 }
 
+.container-main{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 3rem;
+  justify-content: center;
+  align-items: center;
+}
 
+.cols {
+  width: 50%;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.topline {
+  display: block;
+  position: relative;
+  font-size: 2rem;
+  letter-spacing: .5rem;
+  color: #3d535f;
+}
 
 @media (max-width: 900px){
   #nav-menu{
@@ -95,8 +85,8 @@ header{
     padding: 1rem 0rem;
     flex-wrap: nowrap;
   }
-  #nav-menu li:hover {
-  }
+  /* #nav-menu li:hover {
+  } */
   #nav-btn{
     display: block;
   }
