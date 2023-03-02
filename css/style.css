@@ -15,7 +15,7 @@ header{
 
 .a-logo img{
   width: 10rem;
-  margin-bottom: 1.25rem;
+  margin-top: 0.2rem;
 }
 
 #nav-menu {
@@ -28,7 +28,7 @@ header{
 #nav-menu a{
   color: #000;
   text-decoration: none;
-  padding: 2.25rem 0;
+  padding: 2.1rem 0;
 }
 
 #nav-menu li a{
@@ -97,4 +97,10 @@ header{
     background-color: #f8fff9;
   }
 
+}
+
+@media (max-width: 600px){
+  header{
+    padding: 0;
+  }
 }
