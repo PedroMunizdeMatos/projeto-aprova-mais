@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  background: #f6f9fc;
+  /* background: #fafcff; */
+  background: #fcfdff;
+
 }
 
 header{
@@ -12,7 +14,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 3rem;
+  padding: 0 2rem;
 }
 
 .a-logo img{
@@ -28,18 +30,18 @@ header{
 }
 
 #nav-menu a{
-  color: #000;
+  color: #1c2d1e;
   text-decoration: none;
-  padding: 2.15rem 0;
+  padding: 2rem 0;
 }
 
 #nav-menu li a{
-  border-bottom: 0px #00d11b;
-  transition: 0.2s ease-in-out;
+  border-bottom: solid 0px #00d11b;
+  transition: color 0.2s ease-in-out;
 }
 
 #nav-menu li a:hover {
-  border-bottom: 1px solid #00d11b;
+  border-bottom: solid 1px #00d11b;
   color: #00d11b;
   font-size: 1rem;
 }
@@ -65,7 +67,7 @@ header{
   position: relative;
   font-size: 2rem;
   letter-spacing: .3rem;
-  color: #00d11b;
+  color: #1c2d1e;
   /* color: #0b3772; */
 }
 
@@ -90,6 +92,45 @@ header{
 .type-effect-text {
   color: #00d11b;
   text-transform: capitalize;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.btns button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background: #1c2d1e;
+  color: #fcfdff;
+  border-radius: .3rem;
+  padding: .5rem 1rem;
+  letter-spacing: .2rem;
+  text-transform: capitalize;
+  box-shadow: 0.1rem .2rem .3rem rgba(0, 0, 0, 0.2 );
+  transition: background ease-in-out .2s;
+}
+
+.btns button:hover {
+  background: #00d11b;
+}
+
+.imgbox {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.imgbox img {
+  position: relative;
+  width: 90%;
+  left: 7rem;
 }
 
 @media (max-width: 900px){
