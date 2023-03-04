@@ -34,7 +34,7 @@
       <section class="container-main">
         <div class="cols cols0">
           <span class="topline">lorem ipsum</span>
-          <h1>Nós somos <span class="type-effect-text">Aprova +</span></h1>
+          <h1>Nós somos <span class="type-effect-text"></span></h1>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -49,14 +49,29 @@
         <div class="cols cols1">
           <div class="imgbox">
             <img
+              src="./img/testSVG.svg"
+              id="splashArt"
+              alt="background green splash art"
+            />
+            <img
               src="./img/wrapper-image.png"
               id="wrapperThemeImg"
-              alt="Paulo e Thiago sorrindo."
+              alt="Paulo e Thiago smiling"
             />
           </div>
         </div>
       </section>
     </main>
     <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typingEffect = new Typed('.type-effect-text', {
+        strings: ['tutores', 'alunos', 'Aprova +'],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500
+      })
+    </script>
   </body>
 </html>

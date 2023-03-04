@@ -5,7 +5,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   /* background: #fafcff; */
-  background: #fcfdff;
+  background: #fafbfe;
 
 }
 
@@ -127,11 +127,21 @@ header{
   height: 100%;
 }
 
-.imgbox img {
+.imgbox #wrapperThemeImg {
+  background: transparent;
   position: relative;
-  width: 90%;
+  width: 45rem;
   left: 7rem;
 }
+
+.imgbox #splashArt {
+  position: absolute;
+  /* height: 42rem; */
+  width: 60rem;
+  top: -2rem;
+  background: transparent;
+}
+
 
 @media (max-width: 900px){
   #nav-menu{
