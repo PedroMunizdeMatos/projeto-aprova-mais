@@ -11,6 +11,7 @@
 :root {
   --line-color:#eaeaea;
   --light-color-theme: #fafbfe;
+  --light-color-theme-green: #f1fef3;
   --darkgreen-color-theme: #1c2d1e;
   --green-color-theme: #00d11b;
 }
@@ -57,22 +58,38 @@ header{
   font-size: 1.5rem
 }
 
-.container-main{
+.container{
   display: flex;
   padding: 1rem 3rem;
   justify-content: center;
   align-items: center;
 }
 
+.col {
+  width: 50vw;
+}
+
+.col1 {
+  display: flex;
+  flex-direction: column;
+  /* gap: 5rem; */
+}
+
+.type-effect-text {
+  color: var(--green-color-theme);
+  text-transform: capitalize;
+}
+
 .topline {
   font-size: 2rem;
-  letter-spacing: .3rem;
+  letter-spacing: .2 rem;
   color: var(--darkgreen-color-theme);
   /* color: #0b3772; */
+  margin-bottom: 2rem;
 }
 
 .container-main h1 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 900;
   color: var(--darkgreen-color-theme);
 }
@@ -83,19 +100,20 @@ header{
   color: var(--darkgreen-color-theme);
 }
 
-.cols {
-  width: 50vw;
+.p-effect, .p-effect-green {
+  font-weight: 700;
 }
 
-.type-effect-text {
+.p-effect-green {
   color: var(--green-color-theme);
-  text-transform: capitalize;
 }
+
 
 .btns {
   display: flex;
   gap: 1rem;
   padding: 1rem 0;
+  margin-top: 3rem;
 }
 
 .btns button {
@@ -108,7 +126,7 @@ header{
   color: var(--light-color-theme);
   border-radius: .3rem;
   padding: .5rem 1rem;
-  letter-spacing: .2rem;
+  letter-spacing: .1rem;
   text-transform: capitalize;
   box-shadow: 0.1rem .2rem .3rem rgba(0, 0, 0, 0.2 );
   transition: background ease-in-out .2s;
@@ -120,8 +138,8 @@ header{
 
 .imgbox #wrapperThemeImg {
    width: 50vw;
+   max-width: 70rem;
 }
-
 
 @media (min-width: 2500px) {
   .topline {
@@ -143,7 +161,7 @@ header{
   }
 }
 
-@media (min-width: 2200px) {
+@media (min-width: 2250px) {
   .topline {
     font-size: 3rem;
   }
@@ -154,10 +172,46 @@ header{
     padding: .7rem 1rem;
     font-size: 1.75rem;
   }
+  .container-main p{
+    width: auto;
+    max-width: 80%;
+  }
+  #break{
+    display: none;
+  }
 }
 
-@media (max-width:1900px){
-  /* figure out a way to breack word in typing effect with js?*/
+@media (max-width:1400px){
+  .topline {
+    font-size: 1.5rem;
+  }
+  .container-main h1{
+    font-size: 4rem;
+  }
+  .container-main p{
+    font-size: 1rem;
+  }
+  .btns button {
+    padding: .7rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width:1100px){
+  .imgbox {
+    display: none;
+  }
+  .col {
+    width: auto;
+    gap: 2rem;
+  }
+  .container-main p{
+    width: auto;
+    max-width: 80%;
+  }
+  #break {
+    display: none;
+  }
 }
 
 @media (max-width: 900px){
@@ -185,9 +239,8 @@ header{
     background-color: var(--light-color-theme);
   }
 }
-
-@media (max-width: 600px){
-  header{
-    padding: 0;
+ @media(max-width:760px){
+  #break {
+    display: inline;
   }
-}
+ }
