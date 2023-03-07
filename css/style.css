@@ -4,14 +4,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
-  /* background: #fafcff; */
   background: #fafbfe;
 }
 
 :root {
   --line-color:#eaeaea;
-  --light-color-theme: #fafbfe;
-  --light-color-theme-green: #f1fef3;
+  --light-color-theme:#fbfdfb;
+  /* --light-color-theme-green: #f1fef3; */
+  --lightgreen-color-theme:#f7fff8;
+  --semidarkgreen-color-theme: #253a27;
   --darkgreen-color-theme: #1c2d1e;
   --green-color-theme: #00d11b;
 }
@@ -60,7 +61,10 @@ header{
 
 .container{
   display: flex;
-  padding: 1rem 3rem;
+  padding: 5rem 3rem;
+}
+
+.container-main{
   justify-content: center;
   align-items: center;
 }
@@ -123,11 +127,10 @@ header{
   font-size: 1.5rem;
   font-weight: 400;
   background: var(--darkgreen-color-theme);
-  color: var(--light-color-theme);
+  color: var(--lightgreen-color-theme);
   border-radius: .3rem;
   padding: .5rem 1rem;
   letter-spacing: .1rem;
-  text-transform: capitalize;
   box-shadow: 0.1rem .2rem .3rem rgba(0, 0, 0, 0.2 );
   transition: background ease-in-out .2s;
 }
@@ -140,6 +143,103 @@ header{
    width: 50vw;
    max-width: 70rem;
 }
+
+/* sobre nós  */
+.us {
+  background-color: var(--light-color-theme);
+  flex-direction: column;
+  color: var(--darkgreen-color-theme);
+  padding: 3rem 0;
+  gap: 3rem;
+}
+
+.us h1{
+  background: transparent;
+}
+
+.about-us{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about-us h1 {
+  font-size: 4rem;
+}
+
+.about-us p {
+  font-size: 1.2rem;
+  color: var(--semidarkgreen-color-theme);
+}
+
+.us div{
+  background: transparent;
+}
+
+.us div h1, p, h2, h3, h4, img, span{
+  background: transparent;
+}
+
+.us p{
+  width: 90%;
+}
+.mvv{
+  display: flex;
+  flex-direction: row;
+}
+
+.mvv h2 {
+  font-size: 2rem;
+}
+
+.mvv p {
+  color: var(--semidarkgreen-color-theme);
+}
+
+.mission, .vision, .values {
+  gap: 1rem;
+}
+
+.team, .teammate, .teammates, .mission, .vision, .values {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team {
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.team h2 {
+  font-size: 2.5rem;
+}
+
+.teammates {
+  flex-direction: row;
+  width: 80vw;
+  justify-content: space-between;
+}
+
+.teammate {
+  flex-direction: column;
+}
+
+.teammate img {
+  width: 10rem;
+  height: auto;
+}
+
+.mission, .vision, .values {
+  flex-direction: column;
+}
+
+.mission p, .vision p, .values p{
+  width: 70%;
+}
+
+/* medias para ajuste de responsividade */
 
 @media (min-width: 2500px) {
   .topline {
