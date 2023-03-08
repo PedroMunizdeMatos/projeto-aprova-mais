@@ -218,8 +218,8 @@ header{
 
 .teammates {
   flex-direction: row;
-  width: 80vw;
-  justify-content: space-between;
+  width: 99vw;
+  justify-content: space-around;
 }
 
 .teammate {
