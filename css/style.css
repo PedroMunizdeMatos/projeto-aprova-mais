@@ -39,7 +39,7 @@ header{
 #nav-menu a{
   color: var(--darkgreen-color-theme);
   text-decoration: none;
-  padding: 2rem 0;
+  padding: 2.1rem 0;
 }
 
 #nav-menu li a{
