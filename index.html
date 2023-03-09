@@ -10,6 +10,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./img/icon.svg" />
     <title>Aprova +</title>
@@ -22,9 +26,9 @@
       <nav id="nav-header">
         <button id="nav-btn" class="btn-hamburguer">|||</button>
         <ul id="nav-menu" class="">
-          <li><a href="#">Início</a></li>
+          <li><a href="#header">Início</a></li>
           <li><a href="#quemsomos">Quem Somos</a></li>
-          <li><a href="#">Serviços</a></li>
+          <li><a href="#services">Serviços</a></li>
           <li><a href="#">Depoimentos</a></li>
           <li><a href="#" class="contact">Contato</a></li>
         </ul>
@@ -110,7 +114,7 @@
           </div>
         </div>
         <div class="team">
-          <h2>Nossa equipe</h2>
+          <!-- <h2>Nossa equipe</h2> -->
           <div class="teammates">
             <div class="teammate">
               <img src="./img/avatar-thiago.svg" alt="Thiago" />
@@ -133,8 +137,25 @@
           </div>
         </div>
       </section>
-      <section class="container services">
-        <!-- serviços -->
+      <section class="container services" id="services">
+        <div class="title-services">
+          <span>Conheça Nossos</span>
+          <h1>Serviços</h1>
+          <div class="services-box">
+            <div class="service">
+              <i class="fa-solid fa-calendar-check"></i>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-chalkboard-user"></i>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-arrow-trend-up"></i>
+            </div>
+            <div class="service">
+              <i class="fa-solid fa-award"></i>
+            </div>
+          </div>
+        </div>
       </section>
       <section class="container testimonials">
         <!-- depoimentos -->
