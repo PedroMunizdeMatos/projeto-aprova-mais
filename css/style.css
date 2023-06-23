@@ -3,29 +3,29 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #fafbfe;
 }
 
 :root {
-  --line-color:#eaeaea;
-  --light-color-theme:#fbfdfb;
+  --line-color: #eaeaea;
+  --light-color-theme: #fbfdfb;
   /* --light-color-theme-green: #f1fef3; */
-  --lightgreen-color-theme:#f7fff8;
+  --lightgreen-color-theme: #f7fff8;
   --semidarkgreen-color-theme: #253a27;
   --darkgreen-color-theme: #1c2d1e;
   --green-color-theme: #00d11b;
 }
 
-header{
+header {
   border: 0.1rem solid var(--line-color);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
 
-.a-logo img{
+.a-logo img {
   width: 10rem;
   margin-top: 0.2rem;
 }
@@ -36,13 +36,13 @@ header{
   gap: 2rem;
 }
 
-#nav-menu a{
+#nav-menu a {
   color: var(--darkgreen-color-theme);
   text-decoration: none;
   padding: 2.1rem 0;
 }
 
-#nav-menu li a{
+#nav-menu li a {
   border-bottom: solid 0px var(--green-color-theme);
   transition: color 0.2s ease-in-out;
 }
@@ -56,15 +56,15 @@ header{
   display: none;
   padding: 1rem;
   background-color: transparent;
-  font-size: 1.5rem
+  font-size: 1.5rem;
 }
 
-.container{
+.container {
   display: flex;
-  padding: 5rem 3rem;
+  padding: 5rem 6rem;
 }
 
-.container-main{
+.container-main {
   justify-content: center;
   align-items: center;
 }
@@ -86,7 +86,7 @@ header{
 
 .topline {
   font-size: 2rem;
-  letter-spacing: .2 rem;
+  letter-spacing: 0.2 rem;
   color: var(--darkgreen-color-theme);
   /* color: #0b3772; */
   margin-bottom: 2rem;
@@ -104,14 +104,14 @@ header{
   color: var(--darkgreen-color-theme);
 }
 
-.p-effect, .p-effect-green {
+.p-effect,
+.p-effect-green {
   font-weight: 700;
 }
 
 .p-effect-green {
   color: var(--green-color-theme);
 }
-
 
 .btns {
   display: flex;
@@ -128,11 +128,11 @@ header{
   font-weight: 400;
   background: var(--darkgreen-color-theme);
   color: var(--lightgreen-color-theme);
-  border-radius: .3rem;
-  padding: .5rem 1rem;
-  letter-spacing: .1rem;
-  box-shadow: 0.1rem .2rem .3rem rgba(0, 0, 0, 0.2 );
-  transition: background ease-in-out .2s;
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+  letter-spacing: 0.1rem;
+  box-shadow: 0.1rem 0.2rem 0.3rem rgba(0, 0, 0, 0.2);
+  transition: background ease-in-out 0.2s;
 }
 
 .btns button:hover {
@@ -140,8 +140,8 @@ header{
 }
 
 .imgbox #wrapperThemeImg {
-   width: 50vw;
-   max-width: 70rem;
+  width: 50vw;
+  max-width: 70rem;
 }
 
 /* sobre nós  */
@@ -150,14 +150,14 @@ header{
   flex-direction: column;
   color: var(--darkgreen-color-theme);
   padding: 3rem 0;
-  gap: 3rem;
+  gap: 5.5rem;
 }
 
-.us h1{
+.us h1 {
   background: transparent;
 }
 
-.about-us{
+.about-us {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -173,20 +173,27 @@ header{
   color: var(--semidarkgreen-color-theme);
 }
 
-.us div{
+.us div {
   background: transparent;
 }
 
-.us div h1, p, h2, h3, h4, img, span{
+.us div h1,
+p,
+h2,
+h3,
+h4,
+img,
+span {
   background: transparent;
 }
 
-.us p{
+.us p {
   width: 90%;
 }
-.mvv{
+.mvv {
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 
 .mvv h2 {
@@ -197,11 +204,18 @@ header{
   color: var(--semidarkgreen-color-theme);
 }
 
-.mission, .vision, .values {
+.mission,
+.vision,
+.values {
   gap: 1rem;
 }
 
-.team, .teammate, .teammates, .mission, .vision, .values {
+.team,
+.teammate,
+.teammates,
+.mission,
+.vision,
+.values {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -220,6 +234,7 @@ header{
   flex-direction: row;
   width: 99vw;
   justify-content: space-around;
+  margin-right: 3.5rem;
 }
 
 .teammate {
@@ -231,11 +246,15 @@ header{
   height: auto;
 }
 
-.mission, .vision, .values {
+.mission,
+.vision,
+.values {
   flex-direction: column;
 }
 
-.mission p, .vision p, .values p{
+.mission p,
+.vision p,
+.values p {
   width: 70%;
 }
 
@@ -245,14 +264,14 @@ header{
   .topline {
     font-size: 3.5rem;
   }
-  .container-main h1{
+  .container-main h1 {
     font-size: 6.5rem;
   }
   .btns button {
-    padding: .75rem 1.1rem;
+    padding: 0.75rem 1.1rem;
     font-size: 2rem;
   }
-  .a-logo img{
+  .a-logo img {
     width: 12rem;
   }
   #nav-menu a {
@@ -265,47 +284,14 @@ header{
   .topline {
     font-size: 3rem;
   }
-  .container-main h1{
+  .container-main h1 {
     font-size: 6rem;
   }
   .btns button {
-    padding: .7rem 1rem;
+    padding: 0.7rem 1rem;
     font-size: 1.75rem;
   }
-  .container-main p{
-    width: auto;
-    max-width: 80%;
-  }
-  #break{
-    display: none;
-  }
-}
-
-@media (max-width:1400px){
-  .topline {
-    font-size: 1.5rem;
-  }
-  .container-main h1{
-    font-size: 4rem;
-  }
-  .container-main p{
-    font-size: 1rem;
-  }
-  .btns button {
-    padding: .7rem 1rem;
-    font-size: 1rem;
-  }
-}
-
-@media (max-width:1100px){
-  .imgbox {
-    display: none;
-  }
-  .col {
-    width: auto;
-    gap: 2rem;
-  }
-  .container-main p{
+  .container-main p {
     width: auto;
     max-width: 80%;
   }
@@ -314,8 +300,41 @@ header{
   }
 }
 
-@media (max-width: 900px){
-  #nav-menu{
+@media (max-width: 1400px) {
+  .topline {
+    font-size: 1.5rem;
+  }
+  .container-main h1 {
+    font-size: 4rem;
+  }
+  .container-main p {
+    font-size: 1rem;
+  }
+  .btns button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 1100px) {
+  .imgbox {
+    display: none;
+  }
+  .col {
+    width: auto;
+    gap: 2rem;
+  }
+  .container-main p {
+    width: auto;
+    max-width: 80%;
+  }
+  #break {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  #nav-menu {
     display: none;
     position: absolute;
     width: 100%;
@@ -329,7 +348,7 @@ header{
     padding: 1rem 0rem;
     flex-wrap: nowrap;
   }
-  #nav-btn{
+  #nav-btn {
     display: block;
   }
   #nav-menu.active {
@@ -339,8 +358,8 @@ header{
     background-color: var(--light-color-theme);
   }
 }
- @media(max-width:760px){
+@media (max-width: 760px) {
   #break {
     display: inline;
   }
- }
+}
