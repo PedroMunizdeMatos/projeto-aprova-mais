@@ -10,12 +10,16 @@
 :root {
   --line-color: #eaeaea;
   --light-color-theme: #ebf8ed;
-  /* --light-color-theme-green: #f1fef3; */
+  /* --light-color-theme-green: #fbfffb; */
   --lightgreen-color-theme: #f7fff8;
   --lightdarkgreen-color-theme: #708673;
   --semidarkgreen-color-theme: #253a27;
   --darkgreen-color-theme: #1c2d1e;
   --green-color-theme: #00d11b;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 header {
@@ -91,6 +95,7 @@ header {
   color: var(--darkgreen-color-theme);
   /* color: #0b3772; */
   margin-bottom: 2rem;
+  text-align: left;
 }
 
 .container-main h1 {
@@ -302,6 +307,7 @@ span {
   background: transparent;
 }
 
+/* comun css services & testimonials */
 .slider {
   overflow-x: auto;
   display: flex;
@@ -325,8 +331,8 @@ span {
   height: 26rem;
   gap: 0.5rem;
 }
-/* SERVICES  */
 
+/* services  */
 .title-services {
   text-align: center;
   color: var(--darkgreen-color-theme);
@@ -347,7 +353,7 @@ span {
   justify-content: space-around;
   gap: 2rem;
   border-radius: 0.5rem;
-  padding: 8.5rem 2rem;
+  padding: 8rem 2rem;
 }
 
 .service {
@@ -368,24 +374,35 @@ span {
   color: #000;
 }
 
-/* TESTIMONIALS */
+/* testimonials */
 .testimonials {
   display: flex;
   justify-content: center;
   flex-direction: column;
   background: var(--light-color-theme);
-  gap: 2rem;
+  gap: 3rem;
+  text-align: center;
+}
+.span-testimonials {
+  padding-bottom: 4.25rem;
 }
 
-.testimonials h1,
-span {
+.testimonials h1 {
+  font-size: 2rem;
   background: transparent;
-  text-align: center;
+  color: var(--darkgreen-color-theme);
 }
 
 .testimonial {
   align-items: center;
   border: 1px solid var(--line-color);
+  transition: all 0.3s;
+  height: 30rem;
+}
+
+.testimonial:hover {
+  border: 1px solid var(--lightdarkgreen-color-theme);
+  box-shadow: 0 0 6px 0 var(--lightdarkgreen-color-theme);
 }
 
 .testimonial img {
@@ -402,8 +419,57 @@ span {
 .checked {
   color: var(--green-color-theme);
 }
-/* medias para ajuste de responsividade */
 
+/* footer */
+.left-footer,
+.right-footer,
+footer a {
+  background: transparent;
+}
+
+.social-medias {
+  display: flex;
+  flex-direction: row;
+  background: transparent;
+  gap: 0.5rem;
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+.social-medias span {
+  transition: all 0.2s;
+  color: var(--lightgreen-color-theme);
+  padding: 0.2rem;
+  border-radius: 50%;
+}
+.social-medias span:hover {
+  color: #0b110b;
+  /* background: var(--lightgreen-color-theme); */
+}
+
+footer {
+  display: flex;
+  background: var(--darkgreen-color-theme);
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+  align-items: center;
+  text-align: left;
+}
+
+footer h1,
+footer span {
+  background: transparent;
+  color: var(--lightgreen-color-theme);
+}
+
+footer h1 {
+  font-size: 1.2rem;
+}
+
+footer span {
+  font-size: 0.7rem;
+}
+
+/* medias para ajuste de responsividade */
 @media (min-width: 2500px) {
   .topline {
     font-size: 3.5rem;
@@ -443,12 +509,12 @@ span {
     display: none;
   }
 }
-@media (min-width: 1700px) {
+@media (min-width: 1800px) {
   .service:hover {
     height: 26rem;
   }
 }
-@media (max-width: 1700px) {
+@media (max-width: 1800px) {
   .service {
     height: auto;
   }
@@ -500,6 +566,9 @@ span {
 }
 
 @media (max-width: 900px) {
+  .container-main h1 {
+    font-size: 3rem;
+  }
   #nav-menu {
     display: none;
     position: absolute;
@@ -508,11 +577,17 @@ span {
     right: 0;
     height: calc(100vh -9.5rem);
     padding: 1rem 0;
+    z-index: 1;
+  }
+  #nav-menu li {
+    background: transparent;
   }
   #nav-menu li a {
+    background: transparent;
     transition: none;
-    padding: 1rem 0rem;
+    padding: 0rem 0rem;
     flex-wrap: nowrap;
+    transition: all 0.3s;
   }
   #nav-btn {
     display: block;
@@ -538,5 +613,16 @@ span {
 @media (max-width: 760px) {
   .service {
     width: 70vw;
+  }
+}
+@media (max-width: 600px) {
+  .slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: unset;
+  }
+  .testimonial p {
+    overflow: unset;
   }
 }
