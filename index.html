@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;700&family=Racing+Sans+One&family=Rampart+One&display=swap"
       rel="stylesheet"
     />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="icon" href="./img/icon.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Aprova +</title>
   </head>
   <body>
@@ -29,7 +33,7 @@
           <li><a href="#header">Início</a></li>
           <li><a href="#quemsomos">Quem Somos</a></li>
           <li><a href="#services">Serviços</a></li>
-          <li><a href="#">Depoimentos</a></li>
+          <li><a href="#testimonials">Depoimentos</a></li>
           <li><a href="#" class="contact">Contato</a></li>
         </ul>
       </nav>
@@ -173,7 +177,7 @@
           <h1><span class="type-effect-text-services"></span></h1>
         </div>
         <div class="services-box">
-          <div class="service">
+          <div class="service card">
             <span>
               <ion-icon name="school-outline"></ion-icon>
             </span>
@@ -188,7 +192,7 @@
               harum omnis laborum ipsum eum?
             </p>
           </div>
-          <div class="service">
+          <div class="service card">
             <span>
               <ion-icon name="ribbon-outline"></ion-icon>
             </span>
@@ -203,7 +207,7 @@
               harum omnis laborum ipsum eum?
             </p>
           </div>
-          <div class="service">
+          <div class="service card">
             <span>
               <ion-icon name="calendar-outline"></ion-icon>
             </span>
@@ -218,7 +222,7 @@
               harum omnis laborum ipsum eum?
             </p>
           </div>
-          <div class="service">
+          <div class="service card">
             <span>
               <ion-icon name="home-outline"></ion-icon>
             </span>
@@ -233,10 +237,109 @@
               harum omnis laborum ipsum eum?
             </p>
           </div>
+          <div class="service card">
+            <span>
+              <ion-icon name="stats-chart-outline"></ion-icon>
+            </span>
+            <h2>Alguma outra coisa</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur id enim fugit rerum nesciunt repudiandae cum quod
+              explicabo molestias, beatae eum. Repudiandae nobis sequi, iste
+              harum omnis laborum ipsum eum?
+            </p>
+          </div>
         </div>
       </section>
-      <section class="container testimonials">
-        <!-- CARROUSEL COM DEPOIMENTOS AQUI -->
+      <section class="container testimonials" id="testimonials">
+        <span>
+          <h1>Depoimento</h1>
+          de nossos alunos
+        </span>
+
+        <div class="slider">
+          <div class="testimonial card">
+            <img src="./img/avatar-thiago.svg" alt="random image" />
+            <h2>Nome Pessoa</h2>
+            <div class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fuga
+              esse, reprehenderit molestias non ad perspiciatis incidunt
+              deserunt soluta doloremque atque, temporibus ipsae
+            </p>
+          </div>
+          <div class="testimonial card">
+            <img src="./img/avatar-paulo.svg" alt="random image" />
+            <h2>Nome Pessoa</h2>
+            <div class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fuga
+              esse, reprehenderit molestias non ad perspiciatis incidunt
+              deserunt soluta doloremque atque, temporibus ipsae
+            </p>
+          </div>
+          <div class="testimonial card active">
+            <img src="./img/avatar-thiago.svg" alt="random image" />
+            <h2>Nome Pessoa</h2>
+            <div class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fuga
+              esse, reprehenderit molestias non ad perspiciatis incidunt
+              deserunt soluta doloremque atque, temporibus ipsae
+            </p>
+          </div>
+          <div class="testimonial card">
+            <img src="./img/avatar-thiago.svg" alt="random image" />
+            <h2>Nome Pessoa</h2>
+            <div class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
+              mollitia maiores eveniet labore dolor fuga tenetur tempora quos,
+              saepe modi reiciendis omnis, earum expedita ex beatae laborum
+              voluptatem ullam? Ratione.
+            </p>
+          </div>
+          <div class="testimonial card">
+            <img src="./img/avatar-paulo.svg" alt="random image" />
+            <h2>Nome Pessoa</h2>
+            <div class="rating">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fuga
+              esse, reprehenderit molestias non ad perspiciatis incidunt
+              deserunt soluta doloremque atque, temporibus ipsae
+            </p>
+          </div>
+        </div>
       </section>
       <section class="container contact">
         <!-- BREVE ESPAÇO PARA INFOS DE CONTATO -->
