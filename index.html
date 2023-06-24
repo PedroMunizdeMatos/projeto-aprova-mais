@@ -120,19 +120,49 @@
               <img src="./img/avatar-thiago.svg" alt="Thiago" />
               <h3>Fundador | CEO</h3>
               <h4>informações sobre o Thiago</h4>
-              <span>redes sociais</span>
+              <span>
+                <a href="#">
+                  <ion-icon name="logo-instagram" class="icon-ig"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-facebook" class="icon-fb"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-whatsapp" class="icon-wp"></ion-icon>
+                </a>
+              </span>
             </div>
             <div class="teammate">
               <img src="./img/avatar-paulo.svg" alt="Paulo" />
               <h3>Co-fundador | COO</h3>
-              <h4>informações sobre o Paulo</h4>
-              <span>redes sociais</span>
+              <h4>informações sobre o Tonho Beça</h4>
+              <span>
+                <a href="#">
+                  <ion-icon name="logo-instagram" class="icon-ig"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-facebook" class="icon-fb"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-whatsapp" class="icon-wp"></ion-icon>
+                </a>
+              </span>
             </div>
             <div class="teammate">
               <img src="./img/avatar-pedro.svg" alt="Pedro" />
               <h3>CIO | CTO</h3>
               <h4>informações sobre Pedro</h4>
-              <span>redes sociais</span>
+              <span>
+                <a href="#">
+                  <ion-icon name="logo-instagram" class="icon-ig"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-facebook" class="icon-fb"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="logo-whatsapp" class="icon-wp"></ion-icon>
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -140,28 +170,76 @@
       <section class="container services" id="services">
         <div class="title-services">
           <span>Conheça Nossos</span>
-          <h1>Serviços</h1>
-          <div class="services-box">
-            <div class="service">
-              <i class="fa-solid fa-calendar-check"></i>
-            </div>
-            <div class="service">
-              <i class="fa-solid fa-chalkboard-user"></i>
-            </div>
-            <div class="service">
-              <i class="fa-solid fa-arrow-trend-up"></i>
-            </div>
-            <div class="service">
-              <i class="fa-solid fa-award"></i>
-            </div>
+          <h1><span class="type-effect-text-services"></span></h1>
+        </div>
+        <div class="services-box">
+          <div class="service">
+            <span>
+              <ion-icon name="school-outline"></ion-icon>
+            </span>
+            <h2>
+              Aulas Particulares<br />
+              ou em grupo
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur id enim fugit rerum nesciunt repudiandae cum quod
+              explicabo molestias, beatae eum. Repudiandae nobis sequi, iste
+              harum omnis laborum ipsum eum?
+            </p>
+          </div>
+          <div class="service">
+            <span>
+              <ion-icon name="ribbon-outline"></ion-icon>
+            </span>
+            <h2>
+              Estratégias<br />
+              Vencedoras
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur id enim fugit rerum nesciunt repudiandae cum quod
+              explicabo molestias, beatae eum. Repudiandae nobis sequi, iste
+              harum omnis laborum ipsum eum?
+            </p>
+          </div>
+          <div class="service">
+            <span>
+              <ion-icon name="calendar-outline"></ion-icon>
+            </span>
+            <h2>
+              Horários de Estudos<br />
+              Otimizados
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur id enim fugit rerum nesciunt repudiandae cum quod
+              explicabo molestias, beatae eum. Repudiandae nobis sequi, iste
+              harum omnis laborum ipsum eum?
+            </p>
+          </div>
+          <div class="service">
+            <span>
+              <ion-icon name="home-outline"></ion-icon>
+            </span>
+            <h2>
+              No conforto de<br />
+              sua casa
+            </h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Aspernatur id enim fugit rerum nesciunt repudiandae cum quod
+              explicabo molestias, beatae eum. Repudiandae nobis sequi, iste
+              harum omnis laborum ipsum eum?
+            </p>
           </div>
         </div>
       </section>
       <section class="container testimonials">
-        <!-- depoimentos -->
+        <!-- CARROUSEL COM DEPOIMENTOS AQUI -->
       </section>
       <section class="container contact">
-        <!-- contato -->
+        <!-- BREVE ESPAÇO PARA INFOS DE CONTATO -->
       </section>
     </main>
     <footer>
@@ -169,9 +247,24 @@
     </footer>
     <script src="./js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script>
       var typingEffect = new Typed(".type-effect-text", {
         strings: ["tutores", "alunos", "Aprova +"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500,
+      })
+      var typingEffectServices = new Typed(".type-effect-text-services", {
+        strings: ["Serviços"],
         loop: true,
         typeSpeed: 100,
         backSpeed: 80,
