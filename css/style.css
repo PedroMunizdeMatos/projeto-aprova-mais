@@ -710,6 +710,26 @@ footer span {
     height: 12rem;
   }
 }
+@media (max-width: 899px) {
+  .teammates {
+    flex-wrap: wrap;
+  }
+  .mvv {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .mission,
+  .vision,
+  .values {
+    gap: 0;
+  }
+  .values {
+    padding-bottom: 2rem;
+  }
+  .about-us {
+    padding-bottom: 3rem;
+  }
+}
 @media (max-width: 685px) {
   .testimonial img {
     display: none;
@@ -728,9 +748,6 @@ footer span {
     width: 12rem;
     height: 0.05rem;
     margin: 0;
-  }
-  .teammates {
-    flex-wrap: wrap;
   }
   .service p {
     overflow-y: auto;
