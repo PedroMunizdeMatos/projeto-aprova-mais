@@ -333,11 +333,10 @@ span {
 
 /* comun css services & testimonials */
 .slider {
-  overflow-x: auto;
   display: flex;
-  /* flex-wrap: wrap; */
   justify-content: space-around;
-  gap: 1.5rem;
+
+  gap: 1rem;
   background: transparent;
   padding: 6rem 0rem 0rem 0rem;
 }
@@ -374,7 +373,7 @@ span {
 
 .services-box {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   gap: 2rem;
   border-radius: 0.5rem;
   padding: 6rem 0rem;
@@ -403,7 +402,9 @@ span {
   border-radius: 1rem;
   padding: 2rem;
 }
+
 /* testimonials */
+
 .testimonials {
   display: flex;
   justify-content: center;
@@ -416,6 +417,14 @@ span {
   font-size: 2rem;
   background: transparent;
   color: var(--darkgreen-color-theme);
+}
+
+.testimonials-border {
+  background: transparent;
+  gap: 2.5rem;
+  border: 3px solid var(--lightgreen-color-theme);
+  border-radius: 1rem;
+  padding: 2rem;
 }
 
 .testimonial {
@@ -563,6 +572,29 @@ footer span {
     height: auto;
   }
 }
+@media (max-width: 1600px) {
+  .testimonial {
+    flex-direction: row;
+    height: 15rem;
+    min-width: 34rem;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  .breaker {
+    display: flex;
+    flex-direction: column;
+  }
+  .testimonial-detail {
+    content: "";
+    background: var(--line-color);
+    width: 0.05rem;
+    height: 12rem;
+  }
+  .slider {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
 @media (max-width: 1400px) {
   .topline {
     font-size: 1.5rem;
@@ -585,20 +617,14 @@ footer span {
     width: 20rem;
     height: auto;
   }
-
-  .slider {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: unset;
+  .testimonial {
+    min-width: 30rem;
   }
 }
 
-@media (max-width: 1231px) {
+@media (max-width: 1254px) {
   .testimonial {
-    width: 30%;
-    transition: border 0.3s;
+    width: auto;
   }
   #br0,
   #br1,
@@ -682,7 +708,6 @@ footer span {
     background: var(--line-color);
     width: 0.05rem;
     height: 12rem;
-    /* transform: rotate(90deg); */
   }
 }
 @media (max-width: 685px) {
@@ -691,7 +716,6 @@ footer span {
   }
   .breaker {
     display: flex;
-    /* flex-direction: row; */
   }
   .testimonial {
     flex-direction: column;
@@ -724,6 +748,11 @@ footer span {
   .left-footer,
   .right-footer {
     flex-direction: column;
+  }
+  .testimonials-border,
+  .service-border {
+    border: transparent;
+    padding: 0;
   }
 }
 @media (max-width: 550px) {
