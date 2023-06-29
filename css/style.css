@@ -151,12 +151,20 @@ header {
 }
 
 /* ABOUT US  */
-.us {
+.us,
+.border-us {
+  display: flex;
   background-color: var(--light-color-theme);
   flex-direction: column;
   color: var(--darkgreen-color-theme);
-  padding: 3rem 0;
-  gap: 5.5rem;
+  /* padding: 3rem 0; */
+}
+
+.us-border {
+  gap: 2.5rem;
+  border: 3px solid var(--lightgreen-color-theme);
+  border-radius: 1rem;
+  padding: 1rem;
 }
 
 .us h1 {
@@ -167,7 +175,10 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.5rem;
+  align-self: center;
+  text-align: center;
+  max-width: 90rem;
+  gap: 2rem;
 }
 
 .about-us h1 {
@@ -193,13 +204,12 @@ span {
   background: transparent;
 }
 
-.us p {
-  width: 90%;
-}
 .mvv {
   display: flex;
   flex-direction: row;
   text-align: center;
+  justify-content: space-around;
+  align-items: start;
 }
 
 .mvv h2 {
@@ -213,6 +223,7 @@ span {
 .mission,
 .vision,
 .values {
+  max-width: 25rem;
   gap: 1rem;
 }
 
@@ -238,19 +249,32 @@ span {
 
 .teammates {
   flex-direction: row;
-  width: 99vw;
+  align-items: center;
   justify-content: space-around;
-  margin-right: 3.5rem;
 }
 
 .teammate {
   flex-direction: column;
   gap: 0.2rem;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  width: 20rem;
+  height: 20rem;
+  border: 2px solid transparent;
+  border-radius: 1rem;
+  transition: all 0.3s;
+}
+
+.teammate:hover img {
+  border: 2px solid var(--darkgreen-color-theme);
 }
 
 .teammate img {
   width: 10rem;
   height: auto;
+  border-radius: 50rem;
+  transition: all 0.3s;
+  border: 2px solid transparent;
 }
 
 .teammate span a {
@@ -311,10 +335,11 @@ span {
 .slider {
   overflow-x: auto;
   display: flex;
-  justify-content: space-between;
+  /* flex-wrap: wrap; */
+  justify-content: space-around;
   gap: 1.5rem;
   background: transparent;
-  padding: 6rem 0rem;
+  padding: 6rem 0rem 0rem 0rem;
 }
 
 .card {
@@ -373,18 +398,19 @@ span {
   color: #000;
 }
 
+.service-border {
+  border: 3px solid var(--light-color-theme);
+  border-radius: 1rem;
+  padding: 2rem;
+}
 /* testimonials */
 .testimonials {
   display: flex;
   justify-content: center;
   flex-direction: column;
   background: var(--light-color-theme);
-  /* gap: 3rem; */
   text-align: center;
 }
-/* .span-testimonials {
-  padding-bottom: 4.25rem;
-} */
 
 .testimonials h1 {
   font-size: 2rem;
@@ -413,6 +439,14 @@ span {
 
 .testimonial p {
   overflow-y: auto;
+}
+
+.testimonial-detail {
+  content: "";
+  background: var(--line-color);
+  width: 10rem;
+  height: 0.05rem;
+  margin: 0.5rem 0;
 }
 
 .checked {
@@ -453,7 +487,18 @@ footer {
   align-items: center;
   text-align: left;
 }
-
+footer a {
+  text-decoration: none;
+}
+.right-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: right;
+}
+.dev {
+  color: var(--lightdarkgreen-color-theme);
+}
 footer h1,
 footer span {
   background: transparent;
@@ -519,19 +564,6 @@ footer span {
   }
 }
 @media (max-width: 1400px) {
-  .services-box {
-    flex-wrap: wrap;
-  }
-  .service p {
-    max-width: 33vw;
-  }
-}
-@media (max-width: 1200px) {
-  .service p {
-    max-width: 33vw;
-  }
-}
-@media (max-width: 1400px) {
   .topline {
     font-size: 1.5rem;
   }
@@ -545,9 +577,37 @@ footer span {
     padding: 0.7rem 1rem;
     font-size: 1rem;
   }
+  .services-box {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .service {
+    width: 20rem;
+    height: auto;
+  }
+
+  .slider {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: unset;
+  }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1231px) {
+  .testimonial {
+    width: 30%;
+    transition: border 0.3s;
+  }
+  #br0,
+  #br1,
+  #br2,
+  #br3 {
+    display: none;
+  }
+}
+@media (max-width: 1089px) {
   .imgbox {
     display: none;
   }
@@ -563,8 +623,7 @@ footer span {
     display: none;
   }
 }
-
-@media (max-width: 900px) {
+@media (max-width: 991px) {
   .container-main h1 {
     font-size: 3rem;
   }
@@ -597,31 +656,90 @@ footer span {
     align-items: center;
     background-color: var(--light-color-theme);
   }
-  .teammates {
-    margin: auto;
+  .services-box {
+    width: auto;
   }
   .service {
-    width: 70vw;
+    width: 100%;
+    transition: color 0.3s;
   }
-}
-@media (max-width: 760px) {
-  #break {
-    display: inline;
+  .service p {
+    max-width: 70vw;
   }
-}
-@media (max-width: 760px) {
-  .service {
-    width: 70vw;
+  .testimonial {
+    width: 100%;
+    flex-direction: row;
+    height: 15rem;
+    gap: 2rem;
+    padding: 2rem;
   }
-}
-@media (max-width: 600px) {
-  .slider {
+  .breaker {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    overflow: unset;
   }
-  .testimonial p {
-    overflow: unset;
+  .testimonial-detail {
+    content: "";
+    background: var(--line-color);
+    width: 0.05rem;
+    height: 12rem;
+    /* transform: rotate(90deg); */
+  }
+}
+@media (max-width: 685px) {
+  .testimonial img {
+    display: none;
+  }
+  .breaker {
+    display: flex;
+    /* flex-direction: row; */
+  }
+  .testimonial {
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 0.5rem;
+  }
+  .testimonial-detail {
+    content: "";
+    background: var(--line-color);
+    width: 12rem;
+    height: 0.05rem;
+    margin: 0;
+  }
+  .teammates {
+    flex-wrap: wrap;
+  }
+  .service p {
+    overflow-y: auto;
+    height: 10rem;
+  }
+  footer h1 {
+    font-size: 0.9rem;
+  }
+  footer .fa {
+    font-size: 1.5rem;
+  }
+  .social-medias {
+    padding: 0;
+  }
+  .left-footer,
+  .right-footer {
+    flex-direction: column;
+  }
+}
+@media (max-width: 550px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+  .services-box,
+  .slider {
+    padding: 1.5rem 0rem;
+  }
+  footer {
+    padding: 2.5rem 2rem;
+  }
+}
+@media (max-width: 550px) {
+  .social-medias {
+    gap: 0;
   }
 }
