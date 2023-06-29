@@ -314,6 +314,7 @@ span {
   justify-content: space-between;
   gap: 1.5rem;
   background: transparent;
+  padding: 6rem 0rem;
 }
 
 .card {
@@ -344,16 +345,14 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
 }
 
 .services-box {
   display: flex;
-  width: 88vw;
   justify-content: space-around;
   gap: 2rem;
   border-radius: 0.5rem;
-  padding: 8rem 2rem;
+  padding: 6rem 0rem;
 }
 
 .service {
@@ -380,12 +379,12 @@ span {
   justify-content: center;
   flex-direction: column;
   background: var(--light-color-theme);
-  gap: 3rem;
+  /* gap: 3rem; */
   text-align: center;
 }
-.span-testimonials {
+/* .span-testimonials {
   padding-bottom: 4.25rem;
-}
+} */
 
 .testimonials h1 {
   font-size: 2rem;
