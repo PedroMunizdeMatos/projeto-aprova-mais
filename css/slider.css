@@ -1,0 +1,107 @@
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background: #fafbfe;
+}
+
+:root {
+  --line-color: #eaeaea;
+  --light-color-theme: #ebf8ed;
+  /* --light-color-theme-green: #fbfffb; */
+  --lightgreen-color-theme: #f7fff8;
+  --lightdarkgreen-color-theme: #708673;
+  --semidarkgreen-color-theme: #253a27;
+  --darkgreen-color-theme: #1c2d1e;
+  --green-color-theme: #00d11b;
+}
+.slider {
+  position: relative;
+  margin: 0 auto;
+  max-width: 90rem;
+  gap: 1rem;
+  padding: 2rem;
+}
+.slider-wrapper {
+  overflow-x: auto;
+}
+.slider-wrapper::-webkit-scrollbar {
+  display: none;
+}
+.testimonial {
+  border: 1px solid var(--darkgreen-color-theme);
+  color: var(--darkgreen-color-theme);
+  width: 15rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0.6;
+  border-radius: 0.5rem;
+  flex-shrink: 0;
+  text-align: center;
+}
+.testimonial-detail {
+  content: "";
+  background: var(--line-color);
+  width: 10rem;
+  height: 0.05rem;
+  margin: 0.5rem 0;
+}
+.current {
+  opacity: 1;
+}
+.current img {
+  border: 2px solid;
+  border-radius: 50%;
+  padding: 0.05rem;
+}
+.testimonials-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1rem;
+}
+.fa {
+  color: var(--darkgreen-color-theme);
+}
+
+.checked {
+  color: var(--green-color-theme);
+}
+
+.btn-next,
+.btn-back {
+  color: var(--darkgreen-color-theme);
+  font-size: 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  line-height: 2rem;
+  width: 4rem;
+  cursor: pointer;
+  border: none;
+  transition: all 300ms;
+  opacity: 0.3;
+  /* border-radius: 0.5rem; */
+  z-index: 9;
+}
+.btn-next {
+  background: linear-gradient(to left, #1c2d1e, transparent);
+  right: 0;
+  left: auto;
+}
+.btn-back {
+  background: linear-gradient(to right, #1c2d1e, transparent);
+}
+.btn-next:hover {
+  color: var(--light-color-theme);
+  opacity: 1;
+}
+.btn-back:hover {
+  color: var(--light-color-theme);
+  opacity: 1;
+}

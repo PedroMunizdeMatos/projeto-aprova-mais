@@ -177,8 +177,8 @@ header {
   align-items: center;
   align-self: center;
   text-align: center;
-  max-width: 90rem;
   gap: 2rem;
+  padding-bottom: 2rem;
 }
 
 .about-us h1 {
@@ -188,6 +188,7 @@ header {
 .about-us p {
   font-size: 1.2rem;
   color: var(--semidarkgreen-color-theme);
+  max-width: 75vw;
 }
 
 .us div {
@@ -338,7 +339,7 @@ span {
 
   gap: 1rem;
   background: transparent;
-  padding: 6rem 0rem 0rem 0rem;
+  padding: 5rem 0rem 3rem 0rem;
 }
 
 .card {
@@ -376,7 +377,7 @@ span {
   justify-content: center;
   gap: 2rem;
   border-radius: 0.5rem;
-  padding: 6rem 0rem;
+  padding: 5rem 0rem 3rem 0rem;
 }
 
 .service {
@@ -576,7 +577,7 @@ footer span {
   .testimonial {
     flex-direction: row;
     height: 15rem;
-    min-width: 34rem;
+    width: 35vw;
     gap: 2rem;
     padding: 2rem;
   }
@@ -592,6 +593,7 @@ footer span {
   }
   .slider {
     justify-content: center;
+    flex-direction: row;
     flex-wrap: wrap;
   }
 }
@@ -617,15 +619,9 @@ footer span {
     width: 20rem;
     height: auto;
   }
-  .testimonial {
-    min-width: 30rem;
-  }
 }
 
 @media (max-width: 1254px) {
-  .testimonial {
-    width: auto;
-  }
   #br0,
   #br1,
   #br2,
@@ -693,7 +689,6 @@ footer span {
     max-width: 70vw;
   }
   .testimonial {
-    width: 100%;
     flex-direction: row;
     height: 15rem;
     gap: 2rem;
@@ -727,7 +722,14 @@ footer span {
     padding-bottom: 2rem;
   }
   .about-us {
-    padding-bottom: 3rem;
+    gap: 0.5rem;
+  }
+  .about-us h1 {
+    font-size: 2.5rem;
+  }
+  .about-us p {
+    font-size: 1rem;
+    max-width: 50vw;
   }
 }
 @media (max-width: 685px) {
@@ -738,6 +740,7 @@ footer span {
     display: flex;
   }
   .testimonial {
+    width: 1rem;
     flex-direction: column;
     padding: 1rem 2rem;
     gap: 0.5rem;
