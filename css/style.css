@@ -423,7 +423,7 @@ span {
 .slider {
   position: relative;
   margin: 0 auto;
-  max-width: 90rem;
+  max-width: 90vw;
   gap: 1rem;
   padding: 2rem;
   margin-top: 3rem;
