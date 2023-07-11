@@ -633,25 +633,6 @@ footer span {
     height: auto;
   }
 }
-@media (max-width: 1600px) {
-  /* .testimonial {
-    flex-direction: row;
-    height: 15rem;
-    width: 35vw;
-    gap: 2rem;
-    padding: 2rem;
-  }
-  .breaker {
-    display: flex;
-    flex-direction: column;
-  }
-  .testimonial-detail {
-    content: "";
-    background: var(--line-color);
-    width: 0.05rem;
-    height: 12rem;
-  } */
-}
 @media (max-width: 1400px) {
   .topline {
     font-size: 1.5rem;
@@ -743,22 +724,6 @@ footer span {
   .service p {
     max-width: 70vw;
   }
-  /* .testimonial {
-    flex-direction: row;
-    height: 15rem;
-    gap: 2rem;
-    padding: 2rem;
-  }
-  .breaker {
-    display: flex;
-    flex-direction: column;
-  }
-  .testimonial-detail {
-    content: "";
-    background: var(--line-color);
-    width: 0.05rem;
-    height: 12rem;
-  } */
 }
 @media (max-width: 899px) {
   .teammates {
@@ -788,25 +753,6 @@ footer span {
   }
 }
 @media (max-width: 685px) {
-  /* .testimonial img {
-    display: none;
-  }
-  .breaker {
-    display: flex;
-  }
-  .testimonial {
-    width: 1rem;
-    flex-direction: column;
-    padding: 1rem 2rem;
-    gap: 0.5rem;
-  }
-  .testimonial-detail {
-    content: "";
-    background: var(--line-color);
-    width: 12rem;
-    height: 0.05rem;
-    margin: 0;
-  } */
   .service p {
     overflow-y: auto;
     height: 10rem;
